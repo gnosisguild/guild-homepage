@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+.container {
+  margin-top: 10vw;
+  padding: 0 1rem;
+  background: url(./firstFrame.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  column-gap: 2em;
+  margin-bottom: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main {
   min-height: 100vh;
+  padding: 0;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin: 0 0 1rem 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.tagline {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.vid-bg video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  background: rgb(15 15 2 / 84%);
+  position: relative;
+  z-index: 10;
+  max-width: 750px;
+}
+.social-link {
+  height: 100%;
+  display: flex;
+  column-gap: 0.5em;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1em;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.social-link img {
+  display: block;
+  height: 100%;
+  max-height: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.module-list {
+  margin-top: 2em;
+}
+
+.module-list li {
+  margin-bottom: 1em;
+}
+.module-header {
+  display: flex;
+  column-gap: 1em;
+}
+.module-list li:last-child {
+  margin-bottom: 0;
+}
+
+.links {
+  margin-top: 1em;
+  display: flex;
+  column-gap: 1em;
+  flex-wrap: wrap;
+}
+.links a {
+  display: block;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.wiki-img {
+  width: 100%;
+}
+.wiki-img img {
+  display: block;
+  width: 100%;
+}
+
+.wiki-img figcaption {
+  margin-top: 0.5em;
 }
