@@ -150,7 +150,7 @@ function App() {
                       patterns, documentation, and a library for the field of
                       decentralized organizational design.
                     </p>
-                    <figure>
+                    <figure className="viriditas">
                       <blockquote>
                         <p>
                           Glance at the sun. See the moon and the stars. Gaze at

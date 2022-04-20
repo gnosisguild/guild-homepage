@@ -122,3 +122,18 @@ figure {
 .wiki-img figcaption {
   margin-top: 0.5em;
 }
+
+.viriditas {
+  margin: 1em 2em;
+  padding: 0.5em 0.5em 0.5em 1em;
+  border-left: 2px solid seagreen;
+  background: #0080002b;
+}
+
+.viriditas blockquote {
+  margin: 0;
+}
+
+.viriditas figcaption {
+  margin: 0.5em 0 0 0.5em;
+}
