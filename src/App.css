@@ -1,6 +1,5 @@
 .container {
-  margin-top: 10vw;
-  padding: 0 1rem;
+  padding: 10vw 1rem;
   background: url(./firstFrame.jpg);
   background-size: cover;
   background-position: center;
@@ -9,8 +8,11 @@
 
 .header {
   display: flex;
-  column-gap: 2em;
-  margin-bottom: 2em;
+  column-gap: 2.6em;
+  row-gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1em;
 }
 
 .main {
@@ -33,9 +35,6 @@ p {
 }
 
 .tagline {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
 }
 
 .vid-bg video {
@@ -100,6 +99,7 @@ h3 {
   margin-top: 1em;
   display: flex;
   column-gap: 1em;
+  row-gap: 1em;
   flex-wrap: wrap;
 }
 .links a {
@@ -113,6 +113,8 @@ figure {
 
 .wiki-img {
   width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
 }
 .wiki-img img {
   display: block;
@@ -136,4 +138,27 @@ figure {
 
 .viriditas figcaption {
   margin: 0.5em 0 0 0.5em;
+}
+
+.wiki-info {
+  padding: 1em;
+  display: flex;
+  gap: 1em;
+}
+
+.guild-info {
+  width: 68%;
+  min-width: 300px;
+}
+
+@media (max-width: 700px) {
+  .wiki-info {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 790px) {
+  .guild-info {
+    width: 100%;
+  }
 }

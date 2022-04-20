@@ -32,7 +32,7 @@ function App() {
         </div>
         <section className="content">
           <ZodiacPaper
-            style={{ padding: '2em' }}
+            style={{ padding: '1em' }}
             borderStyle="double"
             variant="elevation"
           >
@@ -41,140 +41,146 @@ function App() {
                 <BadgeIcon icon="zodiac" size={200}></BadgeIcon>
               </div>
 
-              <ZodiacPaper
-                style={{ padding: '1em' }}
-                borderStyle="double"
-                variant="elevation"
-              >
+              <div className="guild-info">
                 <ZodiacPaper
-                  style={{
-                    padding: '1em',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-between',
-                    rowGap: '1em',
-                  }}
+                  style={{ padding: '1em' }}
                   borderStyle="double"
                   variant="elevation"
                 >
-                  <div className="tagline">
-                    <ZodiacPaper
-                      style={{ padding: '1em' }}
-                      borderStyle="double"
-                      variant="elevation"
-                    >
-                      <h2>Gnosis Guild</h2>
-                      <p>
-                        Society for interdependent software & keeper of the
-                        Zodiac open standard
-                      </p>
-                    </ZodiacPaper>
-                  </div>
                   <ZodiacPaper
                     style={{
                       padding: '1em',
                       display: 'flex',
-                      columnGap: '1em',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
                       rowGap: '1em',
-                      flexWrap: 'wrap',
                     }}
                     borderStyle="double"
                     variant="elevation"
                   >
-                    <ZodiacPaper
-                      style={{ flexGrow: '1' }}
-                      borderStyle="double"
-                      variant="elevation"
-                    >
-                      <a
-                        className="social-link"
-                        href="https://discord.gg/gnosisguild"
+                    <div className="tagline">
+                      <ZodiacPaper
+                        style={{ padding: '1em' }}
+                        borderStyle="double"
+                        variant="elevation"
                       >
-                        <img src={DiscordImg} />
-                        <span>Discord</span>
-                      </a>
-                    </ZodiacPaper>
+                        <h2>Gnosis Guild</h2>
+                        <p>
+                          Society for interdependent software & keeper of the
+                          Zodiac open standard
+                        </p>
+                      </ZodiacPaper>
+                    </div>
                     <ZodiacPaper
-                      style={{ flexGrow: '1' }}
+                      style={{
+                        padding: '1em',
+                        display: 'flex',
+                        columnGap: '1em',
+                        rowGap: '1em',
+                        flexWrap: 'wrap',
+                      }}
                       borderStyle="double"
                       variant="elevation"
                     >
-                      <a
-                        className="social-link"
-                        href="https://twitter.com/gnosisguild"
+                      <ZodiacPaper
+                        style={{ flexGrow: '1', minWidth: '80px' }}
+                        borderStyle="double"
+                        variant="elevation"
                       >
-                        <img src={TwitterImg} />
-                        <span>Twitter</span>
-                      </a>
-                    </ZodiacPaper>
-                    <ZodiacPaper
-                      style={{ flexGrow: '1' }}
-                      borderStyle="double"
-                      variant="elevation"
-                    >
-                      <a
-                        className="social-link"
-                        href="https://gnosisguild.mirror.xyz/"
+                        <a
+                          className="social-link"
+                          href="https://discord.gg/gnosisguild"
+                        >
+                          <img src={DiscordImg} />
+                          <span>Discord</span>
+                        </a>
+                      </ZodiacPaper>
+                      <ZodiacPaper
+                        style={{ flexGrow: '1', minWidth: '80px' }}
+                        borderStyle="double"
+                        variant="elevation"
                       >
-                        <img src={MirrorImg} />
-                        <span>Blog</span>
-                      </a>
-                    </ZodiacPaper>
-                    <ZodiacPaper
-                      style={{ flexGrow: '1' }}
-                      borderStyle="double"
-                      variant="elevation"
-                    >
-                      <a className="social-link" href="https://bit.ly/3CPpacx">
-                        <img src={CalendarImg} />
-                        <span>Calendar</span>
-                      </a>
+                        <a
+                          className="social-link"
+                          href="https://twitter.com/gnosisguild"
+                        >
+                          <img src={TwitterImg} />
+                          <span>Twitter</span>
+                        </a>
+                      </ZodiacPaper>
+                      <ZodiacPaper
+                        style={{ flexGrow: '1', minWidth: '80px' }}
+                        borderStyle="double"
+                        variant="elevation"
+                      >
+                        <a
+                          className="social-link"
+                          href="https://gnosisguild.mirror.xyz/"
+                        >
+                          <img src={MirrorImg} />
+                          <span>Blog</span>
+                        </a>
+                      </ZodiacPaper>
+                      <ZodiacPaper
+                        style={{ flexGrow: '1', minWidth: '80px' }}
+                        borderStyle="double"
+                        variant="elevation"
+                      >
+                        <a
+                          className="social-link"
+                          href="https://bit.ly/3CPpacx"
+                        >
+                          <img src={CalendarImg} />
+                          <span>Calendar</span>
+                        </a>
+                      </ZodiacPaper>
                     </ZodiacPaper>
                   </ZodiacPaper>
                 </ZodiacPaper>
-              </ZodiacPaper>
+              </div>
             </section>
             <section className="info-list">
               <ZodiacPaper
                 style={{ padding: '1em', marginBottom: '1em' }}
                 borderStyle="double"
               >
-                <ZodiacPaper
-                  style={{ padding: '1em', display: 'flex', columnGap: '1em' }}
-                  borderStyle="double"
-                >
-                  <div>
-                    <h3>Zodiac Wiki</h3>
-                    <p>
-                      zodiac.wiki is a living resource for DAOs. The wiki houses
-                      patterns, documentation, and a library for the field of
-                      decentralized organizational design.
-                    </p>
-                    <figure className="viriditas">
-                      <blockquote>
-                        <p>
-                          Glance at the sun. See the moon and the stars. Gaze at
-                          the beauty of the Earth's greenings. Now, think.
-                        </p>
-                      </blockquote>
-                      <figcaption>— Hildegard of Bingen</figcaption>
-                    </figure>
-                    <div className="links">
-                      <a href="https://zodiac.wiki">
-                        <ZodiacPaper
-                          style={{ padding: '1em', width: 'auto' }}
-                          borderStyle="double"
-                        >
-                          Join the mailing list
-                        </ZodiacPaper>
-                      </a>
+                <ZodiacPaper borderStyle="double">
+                  <div className="wiki-info">
+                    <div>
+                      <h3>Zodiac Wiki</h3>
+                      <p>
+                        zodiac.wiki is a living resource for DAOs. The wiki
+                        houses patterns, documentation, and a library for the
+                        field of decentralized organizational design.
+                      </p>
+                      <figure className="viriditas">
+                        <blockquote>
+                          <p>
+                            Glance at the sun. See the moon and the stars. Gaze
+                            at the beauty of the Earth's greenings. Now, think.
+                          </p>
+                        </blockquote>
+                        <figcaption>— Hildegard of Bingen</figcaption>
+                      </figure>
+                      <div className="links">
+                        <a href="https://zodiac.wiki">
+                          <ZodiacPaper
+                            style={{ padding: '1em', width: 'auto' }}
+                            borderStyle="double"
+                          >
+                            Join the mailing list
+                          </ZodiacPaper>
+                        </a>
+                      </div>
                     </div>
-                  </div>
 
-                  <figure className="wiki-img">
-                    <img src={PatternImg} />
-                    <figcaption>The Timeless Way of Building (1979)</figcaption>
-                  </figure>
+                    <figure className="wiki-img">
+                      <img src={PatternImg} />
+                      <figcaption>
+                        The Timeless Way of Building (1979)
+                      </figcaption>
+                    </figure>
+                  </div>
                 </ZodiacPaper>
               </ZodiacPaper>
               <ModuleList />
