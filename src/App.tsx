@@ -147,12 +147,8 @@ function App() {
                 <ZodiacPaper borderStyle="double">
                   <div className="wiki-info">
                     <div>
-                      <h3>Zodiac Wiki</h3>
-                      <p>
-                        zodiac.wiki is a living resource for DAOs. The wiki
-                        houses patterns, documentation, and a library for the
-                        field of decentralized organizational design.
-                      </p>
+                    <a href="https://zodiac.wiki"><h3>Zodiac Wiki</h3></a>
+                      <p>zodiac.wiki is a living resource for DAOs. The wiki houses documentation, a library, and a pattern language for organizations.</p>
                       <figure className="viriditas">
                         <blockquote>
                           <p>
@@ -162,16 +158,6 @@ function App() {
                         </blockquote>
                         <figcaption>— Hildegard of Bingen</figcaption>
                       </figure>
-                      <div className="links">
-                        <a href="https://zodiac.wiki">
-                          <ZodiacPaper
-                            style={{ padding: '1em', width: 'auto' }}
-                            borderStyle="double"
-                          >
-                            Join the mailing list
-                          </ZodiacPaper>
-                        </a>
-                      </div>
                     </div>
 
                     <figure className="wiki-img">
