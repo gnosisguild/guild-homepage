@@ -10,20 +10,28 @@ function ModuleList() {
           tools built according to an open standard.
         </p>
         <div className="links">
-          <a href="https://github.com/gnosis/zodiac">
+          <a href="https://zodiac.wiki/index.php/Introduction:_Zodiac_Protocol">
             <ZodiacPaper
               style={{ padding: '1em', width: 'auto' }}
               borderStyle="double"
             >
-              View on Github
+              Learn More
             </ZodiacPaper>
           </a>
-          <a href="https://gnosis.github.io/zodiac/docs/tutorial-build-a-module/setup/">
+          <a href="https://zodiac.wiki/index.php/Category:Documentation">
             <ZodiacPaper
               style={{ padding: '1em', width: 'auto' }}
               borderStyle="double"
             >
               View Docs
+            </ZodiacPaper>
+          </a>
+          <a href="https://zodiac.wiki/index.php/FAQ:_Zodiac_Protocol">
+            <ZodiacPaper
+              style={{ padding: '1em', width: 'auto' }}
+              borderStyle="double"
+            >
+              FAQ
             </ZodiacPaper>
           </a>
         </div>
@@ -43,20 +51,28 @@ function ModuleList() {
                   reported by the Reality.eth oracle.
                 </p>
                 <div className="links">
+                  <a href="https://zodiac.wiki/index.php/Category:Reality_Module">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Learn More
+                    </ZodiacPaper>
+                  </a>
+                  <a href="https://zodiac.wiki/index.php/Reality_Module:_Operator_Tutorial">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Operator Tutorial
+                    </ZodiacPaper>
+                  </a>
                   <a href="https://github.com/gnosis/zodiac-module-reality">
                     <ZodiacPaper
                       style={{ padding: '1em', width: 'auto' }}
                       borderStyle="double"
                     >
-                      View on Github
-                    </ZodiacPaper>
-                  </a>
-                  <a href="https://gnosis.github.io/zodiac/docs/tutorial-module-reality/get-started">
-                    <ZodiacPaper
-                      style={{ padding: '1em', width: 'auto' }}
-                      borderStyle="double"
-                    >
-                      View Docs
+                      Developer Tutorial
                     </ZodiacPaper>
                   </a>
                 </div>
@@ -78,20 +94,36 @@ function ModuleList() {
                   proportional share of this account’s digital assets
                 </p>
                 <div className="links">
+                  <a href="https://zodiac.wiki/index.php/Category:Exit_Pattern">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Learn More
+                    </ZodiacPaper>
+                  </a>
+                  <a href="https://zodiac.wiki/index.php/Exit_App:_Member_Tutorial">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Member Tutorial
+                    </ZodiacPaper>
+                  </a>
+                  <a href="https://zodiac.wiki/index.php/Exit_Pattern:_Operator_Tutorial">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Operator Tutorial
+                    </ZodiacPaper>
+                  </a>
                   <a href="https://github.com/gnosis/zodiac-module-exit">
                     <ZodiacPaper
                       style={{ padding: '1em', width: 'auto' }}
                       borderStyle="double"
                     >
-                      View on Github
-                    </ZodiacPaper>
-                  </a>
-                  <a href="https://gnosis.github.io/zodiac/docs/tutorial-module-exit/get-started">
-                    <ZodiacPaper
-                      style={{ padding: '1em', width: 'auto' }}
-                      borderStyle="double"
-                    >
-                      View Docs
+                      Developer Tutorial
                     </ZodiacPaper>
                   </a>
                   <a href="https://exit.gnosisguild.org">
@@ -121,20 +153,28 @@ function ModuleList() {
                   another chain using an Arbitrary Message Bridge (AMB)
                 </p>
                 <div className="links">
+                  <a href="https://zodiac.wiki/index.php/Category:Bridge_Module">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Learn More
+                    </ZodiacPaper>
+                  </a>
+                  <a href="https://zodiac.wiki/index.php/Bridge_Module:_Operator_Tutorial">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Operator Tutorial
+                    </ZodiacPaper>
+                  </a>
                   <a href="https://github.com/gnosis/zodiac-module-bridge">
                     <ZodiacPaper
                       style={{ padding: '1em', width: 'auto' }}
                       borderStyle="double"
                     >
-                      View on Github
-                    </ZodiacPaper>
-                  </a>
-                  <a href="https://gnosis.github.io/zodiac/docs/tutorial-module-bridge/get-started">
-                    <ZodiacPaper
-                      style={{ padding: '1em', width: 'auto' }}
-                      borderStyle="double"
-                    >
-                      View Docs
+                      Developer Tutorial
                     </ZodiacPaper>
                   </a>
                 </div>
@@ -156,20 +196,28 @@ function ModuleList() {
                   transaction and when it can be executed
                 </p>
                 <div className="links">
+                  <a href="https://zodiac.wiki/index.php/Category:Delay_Modifier">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Learn More
+                    </ZodiacPaper>
+                  </a>
+                  <a href="https://zodiac.wiki/index.php/Delay_Modifier:_Operator_Tutorial">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Operator Tutorial
+                    </ZodiacPaper>
+                  </a>
                   <a href="https://github.com/gnosis/zodiac-modifier-delay">
                     <ZodiacPaper
                       style={{ padding: '1em', width: 'auto' }}
                       borderStyle="double"
                     >
-                      View on Github
-                    </ZodiacPaper>
-                  </a>
-                  <a href="https://gnosis.github.io/zodiac/docs/tutorial-modifier-delay/get-started">
-                    <ZodiacPaper
-                      style={{ padding: '1em', width: 'auto' }}
-                      borderStyle="double"
-                    >
-                      View Docs
+                      Developer Tutorial
                     </ZodiacPaper>
                   </a>
                 </div>
@@ -191,20 +239,20 @@ function ModuleList() {
                   for attached modules
                 </p>
                 <div className="links">
-                  <a href="https://github.com/gnosis/zodiac-modifier-roles">
-                    <ZodiacPaper
-                      style={{ padding: '1em', width: 'auto' }}
-                      borderStyle="double"
-                    >
-                      View on Github
-                    </ZodiacPaper>
-                  </a>
                   <a href="https://gnosis.github.io/zodiac/docs/tutorial-modifier-roles/get-started">
                     <ZodiacPaper
                       style={{ padding: '1em', width: 'auto' }}
                       borderStyle="double"
                     >
-                      View Docs
+                      Operator Tutorial
+                    </ZodiacPaper>
+                  </a>
+                  <a href="https://github.com/gnosis/zodiac-modifier-roles">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Developer Tutorial
                     </ZodiacPaper>
                   </a>
                 </div>
