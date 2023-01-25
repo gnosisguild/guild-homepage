@@ -239,7 +239,15 @@ function ModuleList() {
                   for attached modules
                 </p>
                 <div className="links">
-                  <a href="https://gnosis.github.io/zodiac/docs/tutorial-modifier-roles/get-started">
+                  <a href="https://zodiac.wiki/index.php/Category:Roles_Modifier">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Learn More
+                    </ZodiacPaper>
+                  </a>
+                  <a href="https://zodiac.wiki/index.php/Roles_Modifier:_Operator_Tutorial">
                     <ZodiacPaper
                       style={{ padding: '1em', width: 'auto' }}
                       borderStyle="double"
@@ -253,6 +261,41 @@ function ModuleList() {
                       borderStyle="double"
                     >
                       Developer Tutorial
+                    </ZodiacPaper>
+                  </a>
+                </div>
+              </div>
+            </ZodiacPaper>
+          </li>
+          <li>
+            <ZodiacPaper
+              style={{ padding: '1em', display: 'flex', columnGap: '1em' }}
+              borderStyle="double"
+            >
+              <div>
+                <BadgeIcon icon="ozGov" size={80} />
+              </div>
+              <div className="module-info">
+                <h3>Governor Module</h3>
+                <p className="description">
+                  Use an Open-Zepellin style Governor contract to control an
+                  Avatar
+                </p>
+                <div className="links">
+                  <a href="https://zodiac.wiki/index.php/Category:Governor_Module">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Learn More
+                    </ZodiacPaper>
+                  </a>
+                  <a href="https://zodiac.wiki/index.php/Governor_Module:_Operator_Tutorial">
+                    <ZodiacPaper
+                      style={{ padding: '1em', width: 'auto' }}
+                      borderStyle="double"
+                    >
+                      Operator Tutorial
                     </ZodiacPaper>
                   </a>
                 </div>

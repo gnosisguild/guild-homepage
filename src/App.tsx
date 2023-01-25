@@ -89,7 +89,7 @@ function App() {
                       >
                         <a
                           className="social-link"
-                          href="https://discord.gg/gnosisguild"
+                          href="https://bit.ly/gnosisguilddiscord"
                         >
                           <img src={DiscordImg} />
                           <span>Discord</span>
@@ -147,8 +147,14 @@ function App() {
                 <ZodiacPaper borderStyle="double">
                   <div className="wiki-info">
                     <div>
-                    <a href="https://zodiac.wiki"><h3>Zodiac Wiki</h3></a>
-                      <p>zodiac.wiki is a living resource for DAOs. The wiki houses documentation, a library, and a pattern language for organizations.</p>
+                      <a href="https://zodiac.wiki">
+                        <h3>Zodiac Wiki</h3>
+                      </a>
+                      <p>
+                        zodiac.wiki is a living resource for DAOs. The wiki
+                        houses documentation, a library, and a pattern language
+                        for organizations.
+                      </p>
                       <figure className="viriditas">
                         <blockquote>
                           <p>
