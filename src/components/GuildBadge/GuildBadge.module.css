@@ -1,0 +1,31 @@
+.cls1 {
+  mask: url(#mask);
+}
+
+.cls2 {
+  fill: #ffef76;
+}
+
+.cls3 {
+  fill: #fff;
+}
+
+.cls4 {
+  fill: none;
+}
+
+.cls4,
+.cls5,
+.cls6 {
+  stroke: #ffef76;
+  stroke-width: 3px;
+}
+
+.cls5 {
+  stroke-miterlimit: 13;
+}
+.badgeContainer {
+  opacity: 0.5;
+  flex-grow: 1;
+  max-width: 220px;
+}

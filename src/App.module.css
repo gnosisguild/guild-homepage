@@ -1,6 +1,6 @@
 .container {
   padding: 10vw 1rem;
-  background: url(./firstFrame.jpg);
+  background: url(./assets/firstFrame.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -8,10 +8,11 @@
 
 .header {
   display: flex;
-  column-gap: 2.6em;
+  column-gap: 1em;
   row-gap: 1em;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 1em;
 }
 
@@ -21,7 +22,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -34,10 +34,7 @@ p {
   margin: 0;
 }
 
-.tagline {
-}
-
-.vid-bg video {
+.vidBg video {
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -53,7 +50,7 @@ p {
   z-index: 10;
   max-width: 750px;
 }
-.social-link {
+.socialLink {
   height: 100%;
   display: flex;
   column-gap: 0.5em;
@@ -63,16 +60,10 @@ p {
   text-decoration: none;
 }
 
-.social-link img {
+.socialLink img {
   display: block;
   height: 100%;
   max-height: 1.5em;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 h3 {
@@ -80,48 +71,22 @@ h3 {
   margin: 0;
 }
 
-.module-list {
-  margin-top: 2em;
-}
-
-.module-list li {
-  margin-bottom: 1em;
-}
-.module-header {
-  display: flex;
-  column-gap: 1em;
-}
-.module-list li:last-child {
-  margin-bottom: 0;
-}
-
-.links {
-  margin-top: 1em;
-  display: flex;
-  column-gap: 1em;
-  row-gap: 1em;
-  flex-wrap: wrap;
-}
-.links a {
-  display: block;
-  text-decoration: none;
-}
-
 figure {
   margin: 0;
 }
 
-.wiki-img {
+.wikiImg {
   width: 100%;
   max-width: 370px;
   margin: 0 auto;
 }
-.wiki-img img {
+.wikiImg img {
   display: block;
   width: 100%;
+  opacity: 0.7;
 }
 
-.wiki-img figcaption {
+.wikiImg figcaption {
   margin-top: 0.5em;
 }
 
@@ -140,25 +105,34 @@ figure {
   margin: 0.5em 0 0 0.5em;
 }
 
-.wiki-info {
+.wikiInfo {
   padding: 1em;
   display: flex;
   gap: 1em;
 }
 
-.guild-info {
+.guildInfo {
   width: 68%;
   min-width: 300px;
 }
 
+.guildBadge {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 700px) {
-  .wiki-info {
+  .wikiInfo {
     flex-wrap: wrap;
+  }
+  .header {
+    justify-content: center;
   }
 }
 
 @media (max-width: 790px) {
-  .guild-info {
+  .guildInfo {
     width: 100%;
   }
 }

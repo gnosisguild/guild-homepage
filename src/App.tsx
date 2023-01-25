@@ -1,13 +1,15 @@
 import React, { useEffect, useRef } from 'react'
-import bgVid from './bg2.mp4'
-import TwitterImg from './twitter.svg'
-import DiscordImg from './discord.svg'
-import MirrorImg from './mirror.svg'
-import CalendarImg from './calendar.svg'
-import PatternImg from './patterns.jpeg'
-import { BadgeIcon, ZodiacPaper } from 'zodiac-ui-components'
-import ModuleList from './ModuleList'
-import './App.css'
+import bgVid from './assets/bg2.mp4'
+import TwitterImg from './assets/twitter.svg'
+import DiscordImg from './assets/discord.svg'
+import MirrorImg from './assets/mirror.svg'
+import CalendarImg from './assets/calendar.svg'
+import PatternImg from './assets/patterns.jpeg'
+import FirstFrame from './assets/firstFrame.jpg'
+import classes from './App.module.css'
+import GuildBadge from './components/GuildBadge'
+import WorkList from './components/WorkList'
+import GuildPaper from './components/GuildPaper'
 
 function App() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -16,38 +18,41 @@ function App() {
   }, [])
 
   return (
-    <div className="container">
-      <main className="main">
-        <div className="vid-bg">
+    <div className={classes.container}>
+      <main className={classes.main}>
+        <div className={classes.vidBg}>
           <video
             ref={videoRef}
             playsInline
             autoPlay
             muted
             loop
-            poster="firstFrame.jpg"
+            poster={FirstFrame}
           >
             <source src={bgVid} type="video/mp4" />
           </video>
         </div>
-        <section className="content">
-          <ZodiacPaper
-            style={{ padding: '1em' }}
-            borderStyle="double"
-            variant="elevation"
-          >
-            <section className="header">
-              <div>
-                <BadgeIcon icon="zodiac" size={200}></BadgeIcon>
+        <section className={classes.content}>
+          <GuildPaper style={{ padding: '1em' }}>
+            <section className={classes.header}>
+              <div className={classes.guildBadge}>
+                <GuildPaper
+                  borderStyle="single"
+                  rounded="full"
+                  style={{
+                    display: 'flex',
+                    flexGrow: 1,
+                    padding: '0.5em',
+                    maxWidth: '220px',
+                  }}
+                >
+                  <GuildBadge />
+                </GuildPaper>
               </div>
 
-              <div className="guild-info">
-                <ZodiacPaper
-                  style={{ padding: '1em' }}
-                  borderStyle="double"
-                  variant="elevation"
-                >
-                  <ZodiacPaper
+              <div className={classes.guildInfo}>
+                <GuildPaper style={{ padding: '1em' }}>
+                  <GuildPaper
                     style={{
                       padding: '1em',
                       display: 'flex',
@@ -55,23 +60,17 @@ function App() {
                       justifyContent: 'space-between',
                       rowGap: '1em',
                     }}
-                    borderStyle="double"
-                    variant="elevation"
                   >
-                    <div className="tagline">
-                      <ZodiacPaper
-                        style={{ padding: '1em' }}
-                        borderStyle="double"
-                        variant="elevation"
-                      >
+                    <div className={classes.tagline}>
+                      <GuildPaper style={{ padding: '1em' }}>
                         <h2>Gnosis Guild</h2>
                         <p>
                           Society for interdependent software & keeper of the
                           Zodiac open standard
                         </p>
-                      </ZodiacPaper>
+                      </GuildPaper>
                     </div>
-                    <ZodiacPaper
+                    <GuildPaper
                       style={{
                         padding: '1em',
                         display: 'flex',
@@ -79,73 +78,55 @@ function App() {
                         rowGap: '1em',
                         flexWrap: 'wrap',
                       }}
-                      borderStyle="double"
-                      variant="elevation"
                     >
-                      <ZodiacPaper
-                        style={{ flexGrow: '1', minWidth: '80px' }}
-                        borderStyle="double"
-                        variant="elevation"
-                      >
+                      <GuildPaper style={{ flexGrow: '1', minWidth: '80px' }}>
                         <a
-                          className="social-link"
+                          className={classes.socialLink}
                           href="https://bit.ly/gnosisguilddiscord"
                         >
-                          <img src={DiscordImg} />
+                          <img src={DiscordImg} alt="Discord logo" />
                           <span>Discord</span>
                         </a>
-                      </ZodiacPaper>
-                      <ZodiacPaper
-                        style={{ flexGrow: '1', minWidth: '80px' }}
-                        borderStyle="double"
-                        variant="elevation"
-                      >
+                      </GuildPaper>
+                      <GuildPaper style={{ flexGrow: '1', minWidth: '80px' }}>
                         <a
-                          className="social-link"
+                          className={classes.socialLink}
                           href="https://twitter.com/gnosisguild"
                         >
-                          <img src={TwitterImg} />
+                          <img src={TwitterImg} alt="twitter logo" />
                           <span>Twitter</span>
                         </a>
-                      </ZodiacPaper>
-                      <ZodiacPaper
-                        style={{ flexGrow: '1', minWidth: '80px' }}
-                        borderStyle="double"
-                        variant="elevation"
-                      >
+                      </GuildPaper>
+                      <GuildPaper style={{ flexGrow: '1', minWidth: '80px' }}>
                         <a
-                          className="social-link"
+                          className={classes.socialLink}
                           href="https://gnosisguild.mirror.xyz/"
                         >
-                          <img src={MirrorImg} />
+                          <img src={MirrorImg} alt="mirror logo" />
                           <span>Blog</span>
                         </a>
-                      </ZodiacPaper>
-                      <ZodiacPaper
-                        style={{ flexGrow: '1', minWidth: '80px' }}
-                        borderStyle="double"
-                        variant="elevation"
-                      >
+                      </GuildPaper>
+                      <GuildPaper style={{ flexGrow: '1', minWidth: '80px' }}>
                         <a
-                          className="social-link"
+                          className={classes.socialLink}
                           href="https://bit.ly/3CPpacx"
                         >
-                          <img src={CalendarImg} />
+                          <img
+                            src={CalendarImg}
+                            alt="icon of satellites orbiting an spheroid"
+                          />
                           <span>Calendar</span>
                         </a>
-                      </ZodiacPaper>
-                    </ZodiacPaper>
-                  </ZodiacPaper>
-                </ZodiacPaper>
+                      </GuildPaper>
+                    </GuildPaper>
+                  </GuildPaper>
+                </GuildPaper>
               </div>
             </section>
-            <section className="info-list">
-              <ZodiacPaper
-                style={{ padding: '1em', marginBottom: '1em' }}
-                borderStyle="double"
-              >
-                <ZodiacPaper borderStyle="double">
-                  <div className="wiki-info">
+            <section className={classes.infoList}>
+              <GuildPaper style={{ padding: '1em', marginBottom: '1em' }}>
+                <GuildPaper>
+                  <div className={classes.wikiInfo}>
                     <div>
                       <a href="https://zodiac.wiki">
                         <h3>Zodiac Wiki</h3>
@@ -155,7 +136,7 @@ function App() {
                         houses documentation, a library, and a pattern language
                         for organizations.
                       </p>
-                      <figure className="viriditas">
+                      <figure className={classes.viriditas}>
                         <blockquote>
                           <p>
                             Glance at the sun. See the moon and the stars. Gaze
@@ -166,18 +147,18 @@ function App() {
                       </figure>
                     </div>
 
-                    <figure className="wiki-img">
-                      <img src={PatternImg} />
+                    <figure className={classes.wikiImg}>
+                      <img src={PatternImg} alt="graph of building elements" />
                       <figcaption>
                         The Timeless Way of Building (1979)
                       </figcaption>
                     </figure>
                   </div>
-                </ZodiacPaper>
-              </ZodiacPaper>
-              <ModuleList />
+                </GuildPaper>
+              </GuildPaper>
+              <WorkList />
             </section>
-          </ZodiacPaper>
+          </GuildPaper>
         </section>
       </main>
     </div>

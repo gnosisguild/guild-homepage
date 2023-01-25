@@ -1,0 +1,8 @@
+.boxLink {
+  font-size: 12px;
+  background-color: rgba(217, 212, 173, 0.05);
+}
+
+.boxLink:hover {
+  filter: brightness(1.5);
+}
