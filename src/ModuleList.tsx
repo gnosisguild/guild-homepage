@@ -4,7 +4,7 @@ function ModuleList() {
   return (
     <ZodiacPaper style={{ padding: '1em' }} borderStyle="double">
       <ZodiacPaper style={{ padding: '1em' }} borderStyle="double">
-        <h3>Zodiac Protocol</h3>
+        <h3>Zodiac Standard</h3>
         <p>
           A composable design philosophy for DAOs, Zodiac is a collection of
           tools built according to an open standard.
