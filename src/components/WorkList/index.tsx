@@ -43,16 +43,13 @@ const WorkList = () => {
               tools built according to an open standard.
             </p>
             <div className={classes.links}>
+              <BoxLink href="https://www.zodiac.wiki/" label="Learn More" />
               <BoxLink
-                href="https://zodiac.wiki/index.php/Introduction:_Zodiac_Protocol"
-                label="Learn More"
-              />
-              <BoxLink
-                href="https://zodiac.wiki/index.php/Category:Documentation"
+                href="https://www.zodiac.wiki/documentation"
                 label="View Docs"
               />
               <BoxLink
-                href="https://zodiac.wiki/index.php/FAQ:_Zodiac_Protocol"
+                href="https://www.zodiac.wiki/documentation#faq-zodiac-standard"
                 label="FAQ"
               />
             </div>
@@ -72,15 +69,15 @@ const WorkList = () => {
                     </p>
                     <div className={classes.links}>
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Category:Reality_Module"
+                        href="https://www.zodiac.wiki/documentation/reality-module"
                         label="Learn More"
                       />
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Reality_Module:_Operator_Tutorial"
+                        href="https://www.zodiac.wiki/documentation/reality-module/reality-module-operator-tutorial"
                         label="Operator Tutorial"
                       />
                       <BoxLink
-                        href="https://github.com/gnosis/zodiac-module-reality"
+                        href="https://github.com/gnosisguild/zodiac-module-reality"
                         label="Developer Tutorial"
                       />
                     </div>
@@ -102,19 +99,19 @@ const WorkList = () => {
                     </p>
                     <div className={classes.links}>
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Category:Exit_Pattern"
+                        href="https://www.zodiac.wiki/documentation/exit-pattern"
                         label="Learn More"
                       />
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Exit_App:_Member_Tutorial"
+                        href="https://www.zodiac.wiki/documentation/exit-pattern/exit-app-member-tutorial"
                         label="Member Tutorial"
                       />
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Exit_Pattern:_Operator_Tutorial"
+                        href="https://www.zodiac.wiki/documentation/exit-pattern/exit-module-operator-tutorial"
                         label="Operator Tutorial"
                       />
                       <BoxLink
-                        href="https://github.com/gnosis/zodiac-module-exit"
+                        href="https://github.com/gnosisguild/zodiac-module-exit"
                         label="Developer Tutorial"
                       />
                       <BoxLink
@@ -140,15 +137,15 @@ const WorkList = () => {
                     </p>
                     <div className={classes.links}>
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Category:Bridge_Module"
+                        href="https://www.zodiac.wiki/documentation/bridge-module"
                         label="Learn More"
                       />
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Bridge_Module:_Operator_Tutorial"
+                        href="https://www.zodiac.wiki/documentation/bridge-module/bridge-module-operator-tutorial"
                         label="Operator Tutorial"
                       />
                       <BoxLink
-                        href="https://github.com/gnosis/zodiac-module-bridge"
+                        href="https://github.com/gnosisguild/zodiac-module-bridge"
                         label="Developer Tutorial"
                       />
                     </div>
@@ -170,15 +167,15 @@ const WorkList = () => {
                     </p>
                     <div className={classes.links}>
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Category:Delay_Modifier"
+                        href="https://www.zodiac.wiki/documentation/delay-modifier"
                         label="Learn More"
                       />
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Delay_Modifier:_Operator_Tutorial"
+                        href="https://www.zodiac.wiki/documentation/delay-modifier/delay-modifier-operator-tutorial"
                         label="Operator Tutorial"
                       />
                       <BoxLink
-                        href="https://github.com/gnosis/zodiac-modifier-delay"
+                        href="https://github.com/gnosisguild/zodiac-modifier-delay"
                         label="Developer Tutorial"
                       />
                     </div>
@@ -200,15 +197,15 @@ const WorkList = () => {
                     </p>
                     <div className={classes.links}>
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Category:Roles_Modifier"
+                        href="https://www.zodiac.wiki/documentation/roles-modifier"
                         label="Learn More"
                       />
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Roles_Modifier:_Operator_Tutorial"
+                        href="https://www.zodiac.wiki/documentation/roles-modifier/roles-modifier-operator-tutorial"
                         label="Operator Tutorial"
                       />
                       <BoxLink
-                        href="https://github.com/gnosis/zodiac-modifier-roles"
+                        href="https://github.com/gnosisguild/zodiac-modifier-roles"
                         label="Developer Tutorial"
                       />
                     </div>
@@ -230,11 +227,11 @@ const WorkList = () => {
                     </p>
                     <div className={classes.links}>
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Category:Governor_Module"
+                        href="https://www.zodiac.wiki/documentation/governor-module"
                         label="Learn More"
                       />
                       <BoxLink
-                        href="https://zodiac.wiki/index.php/Governor_Module:_Operator_Tutorial"
+                        href="https://www.zodiac.wiki/documentation/governor-module/governor-module-tutorial"
                         label="Operator Tutorial"
                       />
                     </div>
@@ -287,7 +284,7 @@ const WorkList = () => {
                         label="Visit"
                       />
                       <BoxLink
-                        href="https://github.com/gnosis/zodiac-pilot"
+                        href="https://github.com/gnosisguild/zodiac-pilot"
                         label="View codebase"
                       />
                     </div>
@@ -327,7 +324,7 @@ const WorkList = () => {
                     <div className={classes.links}>
                       <BoxLink href="https://tabula.gg/" label="Visit" />
                       <BoxLink
-                        href="https://github.com/gnosis/tabula"
+                        href="https://github.com/gnosisguild/tabula"
                         label="View codebase"
                       />
                     </div>
