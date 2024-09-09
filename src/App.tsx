@@ -64,10 +64,7 @@ function App() {
                     <div className={classes.tagline}>
                       <GuildPaper style={{ padding: '1em' }}>
                         <h2>Gnosis Guild</h2>
-                        <p>
-                          Society for interdependent software & keeper of the
-                          Zodiac open standard
-                        </p>
+                        <p>Society for interdependent software.</p>
                       </GuildPaper>
                     </div>
                     <GuildPaper
@@ -124,6 +121,31 @@ function App() {
               </div>
             </section>
             <section className={classes.infoList}>
+              <GuildPaper style={{ padding: '1em', marginBottom: '1em' }}>
+                <GuildPaper>
+                  <div className={classes.wikiInfo}>
+                    <div>
+                      <a href="https://enclave.gg">
+                        <h3>Enclave</h3>
+                      </a>
+                      <p>
+                        A protocol for Encrypted Execution Environments (E3),
+                        enabling a new class of secure applications.
+                      </p>
+                    </div>
+
+                    <figure className={classes.wikiImg}>
+                      <img src="/enclave-meta.jpg" alt="" />
+                      <figcaption>
+                        Read more about how Enclave works{' '}
+                        <a href="https://docs.enclave.gg" target="_blank">
+                          here.
+                        </a>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </GuildPaper>
+              </GuildPaper>
               <GuildPaper style={{ padding: '1em', marginBottom: '1em' }}>
                 <GuildPaper>
                   <div className={classes.wikiInfo}>
