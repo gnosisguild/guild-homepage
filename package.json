@@ -2,6 +2,9 @@
   "name": "guild-homepage",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@gnosis.pm/safe-react-components": "^1.1.2",
     "@material-ui/core": "^4.12.4",
