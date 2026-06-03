@@ -1,6 +1,6 @@
 # Gnosis Guild Homepage
 
-A small collection of links and information about Gnosis Guild and Zodiac.
+A small collection of links and information about Gnosis Guild, including The Interfold and Zodiac.
 
 ### To run locally
 
