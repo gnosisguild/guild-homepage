@@ -4,15 +4,14 @@ import TwitterImg from './assets/twitter.svg'
 import DiscordImg from './assets/discord.svg'
 import MirrorImg from './assets/mirror.svg'
 import CalendarImg from './assets/calendar.svg'
-import PatternImg from './assets/patterns.jpeg'
 import FirstFrame from './assets/firstFrame.jpg'
 import classes from './App.module.css'
 import GuildBadge from './components/GuildBadge'
-import WorkList from './components/WorkList'
 import GuildPaper from './components/GuildPaper'
 
 function App() {
   const videoRef = useRef<HTMLVideoElement>(null)
+
   useEffect(() => {
     videoRef.current!.playbackRate = 0.7
   }, [])
@@ -32,6 +31,7 @@ function App() {
             <source src={bgVid} type="video/mp4" />
           </video>
         </div>
+
         <section className={classes.content}>
           <GuildPaper style={{ padding: '1em' }}>
             <section className={classes.header}>
@@ -67,6 +67,7 @@ function App() {
                         <p>Society for interdependent software.</p>
                       </GuildPaper>
                     </div>
+
                     <GuildPaper
                       style={{
                         padding: '1em',
@@ -79,40 +80,49 @@ function App() {
                       <GuildPaper style={{ flexGrow: '1', minWidth: '80px' }}>
                         <a
                           className={classes.socialLink}
-                          href="https://bit.ly/gnosisguilddiscord"
+                          href="https://discord.gnosisguild.org"
+                          target="_blank"
+                          rel="noreferrer"
                         >
                           <img src={DiscordImg} alt="Discord logo" />
                           <span>Discord</span>
                         </a>
                       </GuildPaper>
+
                       <GuildPaper style={{ flexGrow: '1', minWidth: '80px' }}>
                         <a
                           className={classes.socialLink}
-                          href="https://twitter.com/gnosisguild"
+                          href="https://x.com/gnosisguild"
+                          target="_blank"
+                          rel="noreferrer"
                         >
-                          <img src={TwitterImg} alt="twitter logo" />
-                          <span>Twitter</span>
+                          <img src={TwitterImg} alt="X logo" />
+                          <span>X</span>
                         </a>
                       </GuildPaper>
+
                       <GuildPaper style={{ flexGrow: '1', minWidth: '80px' }}>
                         <a
                           className={classes.socialLink}
                           href="https://gnosisguild.mirror.xyz/"
+                          target="_blank"
+                          rel="noreferrer"
                         >
-                          <img src={MirrorImg} alt="mirror logo" />
-                          <span>Blog</span>
+                          <img src={MirrorImg} alt="Writing icon" />
+                          <span>Writing</span>
                         </a>
                       </GuildPaper>
+
                       <GuildPaper style={{ flexGrow: '1', minWidth: '80px' }}>
                         <a
                           className={classes.socialLink}
-                          href="https://bit.ly/3CPpacx"
+                          href="mailto:comms@gnosisguild.org"
                         >
                           <img
                             src={CalendarImg}
-                            alt="icon of satellites orbiting an spheroid"
+                            alt="Email icon"
                           />
-                          <span>Calendar</span>
+                          <span>Email</span>
                         </a>
                       </GuildPaper>
                     </GuildPaper>
@@ -120,65 +130,104 @@ function App() {
                 </GuildPaper>
               </div>
             </section>
+
             <section className={classes.infoList}>
               <GuildPaper style={{ padding: '1em', marginBottom: '1em' }}>
                 <GuildPaper>
                   <div className={classes.wikiInfo}>
                     <div>
-                      <a href="https://enclave.gg">
-                        <h3>Enclave</h3>
+                      <a
+                        href="https://www.theinterfold.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <h3>The Interfold</h3>
                       </a>
+
                       <p>
-                        A protocol for Encrypted Execution Environments (E3),
-                        enabling a new class of secure applications.
+                        A distributed network for confidential coordination,
+                        enabling independent parties to produce shared,
+                        verifiable outcomes from private inputs.
                       </p>
                     </div>
 
                     <figure className={classes.wikiImg}>
-                      <img src="/enclave-meta.jpg" alt="" />
+                      <img
+                        src="/interfold-banner.jpg"
+                        alt="The Interfold banner"
+                      />
                       <figcaption>
-                        Read more about how Enclave works{' '}
-                        <a href="https://docs.enclave.gg" target="_blank">
-                          here.
+                        Explore confidential coordination and network
+                        participation{' '}
+                        <a
+                          href="https://www.theinterfold.com"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          here
                         </a>
+                        . Follow on{' '}
+                        <a
+                          href="https://x.com/theInterfold"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          X
+                        </a>
+                        .
                       </figcaption>
                     </figure>
                   </div>
                 </GuildPaper>
               </GuildPaper>
+
               <GuildPaper style={{ padding: '1em', marginBottom: '1em' }}>
                 <GuildPaper>
                   <div className={classes.wikiInfo}>
                     <div>
-                      <a href="https://zodiac.wiki">
-                        <h3>Zodiac Wiki</h3>
+                      <a
+                        href="https://zodiac.eco"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <h3>Zodiac</h3>
                       </a>
+
                       <p>
-                        zodiac.wiki is a living resource for DAOs. The wiki
-                        houses documentation, a library, and a pattern language
-                        for organizations.
+                        Zodiac helps onchain organizations operate Safes with
+                        programmable permissions, coordinated execution paths,
+                        and safeguards for treasury workflows.
                       </p>
-                      <figure className={classes.viriditas}>
-                        <blockquote>
-                          <p>
-                            Glance at the sun. See the moon and the stars. Gaze
-                            at the beauty of the Earth's greenings. Now, think.
-                          </p>
-                        </blockquote>
-                        <figcaption>— Hildegard of Bingen</figcaption>
-                      </figure>
                     </div>
 
                     <figure className={classes.wikiImg}>
-                      <img src={PatternImg} alt="graph of building elements" />
+                      <img
+                        src="/zodiac-banner.jpg"
+                        alt="Zodiac banner"
+                      />
                       <figcaption>
-                        The Timeless Way of Building (1979)
+                        Explore the Zodiac app and developer resources{' '}
+                        <a
+                          href="https://zodiac.eco"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          here
+                        </a>
+                        . Follow on{' '}
+                        <a
+                          href="https://x.com/zodiaceco"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          X
+                        </a>
+                        .
                       </figcaption>
                     </figure>
                   </div>
                 </GuildPaper>
               </GuildPaper>
-              <WorkList />
             </section>
           </GuildPaper>
         </section>
