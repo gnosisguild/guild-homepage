@@ -202,7 +202,7 @@ function App() {
 
                     <figure className={classes.wikiImg}>
                       <img
-                        src="/zodiac-banner.jpg"
+                        src="/zodiac-banner.png"
                         alt="Zodiac banner"
                       />
                       <figcaption>
