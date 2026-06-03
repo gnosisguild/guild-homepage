@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import bgVid from './assets/bg2.mp4'
 import TwitterImg from './assets/twitter.svg'
 import DiscordImg from './assets/discord.svg'
@@ -183,6 +184,7 @@ function App() {
           </GuildPaper>
         </section>
       </main>
+      <Analytics />
     </div>
   )
 }
