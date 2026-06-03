@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import bgVid from './assets/bg2.mp4'
-import TwitterImg from './assets/twitter.svg'
+import XImg from './assets/x.png'
 import DiscordImg from './assets/discord.svg'
 import MirrorImg from './assets/mirror.svg'
 import CalendarImg from './assets/calendar.svg'
@@ -96,7 +96,7 @@ function App() {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <img src={TwitterImg} alt="X logo" />
+                          <img src={XImg} alt="X logo" />
                           <span>X</span>
                         </a>
                       </GuildPaper>
@@ -118,10 +118,7 @@ function App() {
                           className={classes.socialLink}
                           href="mailto:comms@gnosisguild.org"
                         >
-                          <img
-                            src={CalendarImg}
-                            alt="Email icon"
-                          />
+                          <img src={CalendarImg} alt="Email icon" />
                           <span>Email</span>
                         </a>
                       </GuildPaper>
@@ -157,16 +154,14 @@ function App() {
                         alt="The Interfold banner"
                       />
                       <figcaption>
-                        Explore confidential coordination and network
-                        participation{' '}
                         <a
                           href="https://www.theinterfold.com"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          here
+                          Site
                         </a>
-                        . Follow on{' '}
+                        {' · '}
                         <a
                           href="https://x.com/theInterfold"
                           target="_blank"
@@ -174,7 +169,6 @@ function App() {
                         >
                           X
                         </a>
-                        .
                       </figcaption>
                     </figure>
                   </div>
@@ -201,20 +195,16 @@ function App() {
                     </div>
 
                     <figure className={classes.wikiImg}>
-                      <img
-                        src="/zodiac-banner.png"
-                        alt="Zodiac banner"
-                      />
+                      <img src="/zodiac-banner.png" alt="Zodiac banner" />
                       <figcaption>
-                        Explore the Zodiac app and developer resources{' '}
                         <a
                           href="https://zodiac.eco"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          here
+                          Site
                         </a>
-                        . Follow on{' '}
+                        {' · '}
                         <a
                           href="https://x.com/zodiaceco"
                           target="_blank"
@@ -222,7 +212,6 @@ function App() {
                         >
                           X
                         </a>
-                        .
                       </figcaption>
                     </figure>
                   </div>
