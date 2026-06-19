@@ -222,7 +222,7 @@ const WorkList = () => {
                   <div className={classes.moduleInfo}>
                     <h3>Governor Module</h3>
                     <p className={classes.description}>
-                      Use an Open-Zepellin style Governor contract to control an
+                      Use the OpenZeppelin style Governor contract to control an
                       Avatar
                     </p>
                     <div className={classes.links}>
